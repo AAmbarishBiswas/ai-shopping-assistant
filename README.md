@@ -1,131 +1,120 @@
 # 🛒 AI Shopping Assistant
 
-An AI-powered full-stack shopping application that helps users discover,
-compare, and understand products using intelligent AI assistance.
+An AI-powered full-stack shopping assistant built with **Next.js, TypeScript, MongoDB, Mongoose, and Groq AI**.
 
-The application combines a modern shopping experience with AI-powered
-product recommendations and conversational assistance.
+The application helps users discover products, search and compare products, manage their shopping cart and wishlist, and interact with an AI assistant for product-related questions and recommendations.
+
+---
 
 ## 🚀 Live Demo
 
-🔗 **Live Demo:** Add your deployed URL here
+> Coming soon — deployment in progress.
+
+---
 
 ## 📸 Screenshots
 
-Add screenshots of:
+### 🏠 Home / Product Discovery
 
-- Home page
-- Product listing
-- Product details
-- Shopping cart
-- Wishlist
-- Compare products
-- Login/Register
-- AI Shopping Assistant
-- Admin Dashboard
+_Add screenshot here_
+
+### 🔐 Authentication
+
+_Add screenshot here_
+
+### 🛍️ Product Details
+
+_Add screenshot here_
+
+### 🛒 Shopping Cart
+
+_Add screenshot here_
+
+### 🤖 AI Shopping Assistant
+
+_Add screenshot here_
+
+---
 
 ## ✨ Features
 
-### 👤 Authentication
+### 🔐 Authentication
 
-- User registration
-- User login
+- User registration and login
 - Secure authentication
-- Protected pages
-- User session management
+- Protected application pages
+- Session-based user access
+- User-specific shopping data
 
 ### 🛍️ Product Management
 
-- Browse products
-- Product search
+- Browse available products
+- Search products
 - Product categories
-- Product details
+- Product details page
 - Product filtering
 - Product comparison
+- Product information display
 
 ### 🛒 Shopping Features
 
 - Add products to cart
-- Update cart quantity
+- Update product quantity
 - Remove products from cart
-- Wishlist
-- Compare products
+- Wishlist functionality
+- Product comparison
 - Order management
 
 ### 🤖 AI Shopping Assistant
 
-- Conversational shopping assistance
-- AI-powered product recommendations
-- Product comparison
-- Product explanation
-- Natural-language shopping queries
+The application integrates **Groq AI** to provide an AI-powered shopping experience.
 
-Example:
+Users can ask natural-language questions such as:
 
 > "Find me a laptop under ₹60,000 suitable for programming."
 
-The assistant helps users identify suitable products based on their
-requirements.
+The AI assistant can help users with:
 
-### 🔐 Security
+- Product recommendations
+- Product comparison
+- Product explanations
+- Natural-language shopping queries
+- Shopping-related questions
 
-- Protected routes
-- Authentication
-- Server-side validation
-- Secure API handling
-- Environment variables for sensitive credentials
+### 🔒 Security & Validation
 
-## 🧑‍💻 Tech Stack
+- Protected application routes
+- Authentication checks
+- Server-side API handling
+- Environment variable based secret management
+- Input validation
+- Secure database access
 
-### Frontend
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-
-### Backend
-
-- Next.js API Routes
-- Node.js
-- REST APIs
-
-### Database
-
-- MongoDB
-- Mongoose
-
-### AI
-
-- Groq API
-
-### Tools
-
-- Git
-- GitHub
-- VS Code
+---
 
 ## 🏗️ Application Architecture
 
 ```text
-                    ┌──────────────┐
-                    │     User     │
-                    └──────┬───────┘
-                           │
-                           ▼
-                 ┌──────────────────┐
-                 │   Next.js / React │
-                 └────────┬─────────┘
-                          │
-              ┌───────────┴───────────┐
-              │                       │
-              ▼                       ▼
-       ┌──────────────┐        ┌──────────────┐
-       │  Application │        │ AI Assistant │
-       │     APIs     │        │  Groq API    │
-       └──────┬───────┘        └──────────────┘
-              │
-              ▼
-       ┌──────────────┐
-       │   MongoDB    │
-       └──────────────┘
+                    ┌─────────────────────┐
+                    │       User          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Next.js / React   │
+                    │    Frontend UI      │
+                    └──────────┬──────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                │                             │
+                ▼                             ▼
+      ┌──────────────────┐          ┌──────────────────┐
+      │ Application APIs │          │    Groq AI API   │
+      │   / Backend      │          │ AI Assistant     │
+      └────────┬─────────┘          └──────────────────┘
+               │
+               ▼
+      ┌──────────────────┐
+      │     MongoDB      │
+      │    Mongoose      │
+      └──────────────────┘
